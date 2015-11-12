@@ -1,5 +1,5 @@
 # before all
-environment = :local # :local or :remote
+environment = :remote # :local or :remote
 username = "<username>"
 api_key = "<access_key>" 
 
