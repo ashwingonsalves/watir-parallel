@@ -4,9 +4,9 @@ end
 
 When /^I search Google for (.*)$/ do |term|
   @browser.text_field(name: "q").set term
-  #@browser.button(id: "gbqfb").click
+  @browser.button(name: "btnG").click
 end
 
 Then /^I should see (.*) at Google search results$/ do |term|
-  @browser.link(text: term).when_present.should exist
+  @browser.em(text: term).when_present.should exist
 end
