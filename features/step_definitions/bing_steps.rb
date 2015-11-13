@@ -4,6 +4,6 @@ When /^I search Bing for (.*)$/ do |term|
 end
 
 Then /^I should see (.*) at Bing search results$/ do |term|
-  #@browser.link(text: term).should exist
-  @browser.link(text: term).when_present.should exist
+  @browser.link(text: term).should exist
+  #@browser.link(text: term).when_present.should exist
 end
